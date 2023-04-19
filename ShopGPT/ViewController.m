@@ -24,6 +24,7 @@
     
     self.customMessage = @"Linking account...";
     
+    /*
     BRAccountLinkingCredentials *creds = [BRAccountLinkingCredentials new];
     creds.username = @"yakovlev.andrei@gmail.com";
     creds.password = @"RD8hj5OFNYN^$=E";
@@ -38,6 +39,7 @@
             self.customMessage = @"Error linking.";
         }
     }];
+    */
     
     // Update the label's text with the custom message
     self.myGreet.text = self.customMessage;
