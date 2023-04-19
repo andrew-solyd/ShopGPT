@@ -15,13 +15,14 @@
 		3F148EA729EF345A0043B097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F148EA629EF345A0043B097 /* Assets.xcassets */; };
 		3F148EAA29EF345A0043B097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F148EA829EF345A0043B097 /* LaunchScreen.storyboard */; };
 		3F148EAD29EF345A0043B097 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F148EAC29EF345A0043B097 /* main.m */; };
-		3F7654BA29EF9D2F0099DEC8 /* BlinkReceiptStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 3F7654B929EF9D2F0099DEC8 /* BlinkReceiptStatic */; };
 		3F7654C129EF9DCB0099DEC8 /* AccountLinking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7654BD29EF9DA40099DEC8 /* AccountLinking.xcframework */; };
 		3F7654C229EF9DCB0099DEC8 /* AccountLinking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7654BD29EF9DA40099DEC8 /* AccountLinking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F7654C429EF9DCC0099DEC8 /* BlinkEReceiptStatic.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7654BC29EF9DA40099DEC8 /* BlinkEReceiptStatic.xcframework */; };
 		3F7654C529EF9DCC0099DEC8 /* BlinkEReceiptStatic.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7654BC29EF9DA40099DEC8 /* BlinkEReceiptStatic.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F7654C629EF9DCE0099DEC8 /* MailCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7654BB29EF9DA30099DEC8 /* MailCore.xcframework */; };
 		3F7654C729EF9DCE0099DEC8 /* MailCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7654BB29EF9DA30099DEC8 /* MailCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F7654CA29EFA3880099DEC8 /* BlinkReceiptStatic.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7654C829EFA3790099DEC8 /* BlinkReceiptStatic.xcframework */; };
+		3F7654CB29EFA3880099DEC8 /* BlinkReceiptStatic.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7654C829EFA3790099DEC8 /* BlinkReceiptStatic.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3F7654C229EF9DCB0099DEC8 /* AccountLinking.xcframework in Embed Frameworks */,
+				3F7654CB29EFA3880099DEC8 /* BlinkReceiptStatic.xcframework in Embed Frameworks */,
 				3F7654C529EF9DCC0099DEC8 /* BlinkEReceiptStatic.xcframework in Embed Frameworks */,
 				3F7654C729EF9DCE0099DEC8 /* MailCore.xcframework in Embed Frameworks */,
 			);
@@ -57,6 +59,7 @@
 		3F7654BB29EF9DA30099DEC8 /* MailCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MailCore.xcframework; sourceTree = "<group>"; };
 		3F7654BC29EF9DA40099DEC8 /* BlinkEReceiptStatic.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = BlinkEReceiptStatic.xcframework; sourceTree = "<group>"; };
 		3F7654BD29EF9DA40099DEC8 /* AccountLinking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AccountLinking.xcframework; sourceTree = "<group>"; };
+		3F7654C829EFA3790099DEC8 /* BlinkReceiptStatic.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = BlinkReceiptStatic.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F7654BA29EF9D2F0099DEC8 /* BlinkReceiptStatic in Frameworks */,
 				3F7654C129EF9DCB0099DEC8 /* AccountLinking.xcframework in Frameworks */,
+				3F7654CA29EFA3880099DEC8 /* BlinkReceiptStatic.xcframework in Frameworks */,
 				3F7654C429EF9DCC0099DEC8 /* BlinkEReceiptStatic.xcframework in Frameworks */,
 				3F7654C629EF9DCE0099DEC8 /* MailCore.xcframework in Frameworks */,
 			);
@@ -80,6 +83,7 @@
 				3F7654BD29EF9DA40099DEC8 /* AccountLinking.xcframework */,
 				3F7654BC29EF9DA40099DEC8 /* BlinkEReceiptStatic.xcframework */,
 				3F7654BB29EF9DA30099DEC8 /* MailCore.xcframework */,
+				3F7654C829EFA3790099DEC8 /* BlinkReceiptStatic.xcframework */,
 				3F148E9629EF34590043B097 /* ShopGPT */,
 				3F148E9529EF34590043B097 /* Products */,
 			);
@@ -130,7 +134,6 @@
 			);
 			name = ShopGPT;
 			packageProductDependencies = (
-				3F7654B929EF9D2F0099DEC8 /* BlinkReceiptStatic */,
 			);
 			productName = ShopGPT;
 			productReference = 3F148E9429EF34590043B097 /* Solydaria.app */;
@@ -160,7 +163,6 @@
 			);
 			mainGroup = 3F148E8B29EF34590043B097;
 			packageReferences = (
-				3F7654B829EF9D2F0099DEC8 /* XCRemoteSwiftPackageReference "blinkreceipt-ios" */,
 			);
 			productRefGroup = 3F148E9529EF34590043B097 /* Products */;
 			projectDirPath = "";
@@ -415,25 +417,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3F7654B829EF9D2F0099DEC8 /* XCRemoteSwiftPackageReference "blinkreceipt-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/blinkreceipt/blinkreceipt-ios/";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3F7654B929EF9D2F0099DEC8 /* BlinkReceiptStatic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3F7654B829EF9D2F0099DEC8 /* XCRemoteSwiftPackageReference "blinkreceipt-ios" */;
-			productName = BlinkReceiptStatic;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3F148EA329EF34590043B097 /* ShopGPT.xcdatamodeld */ = {
