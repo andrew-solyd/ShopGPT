@@ -15,6 +15,7 @@
 		3F148EA729EF345A0043B097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F148EA629EF345A0043B097 /* Assets.xcassets */; };
 		3F148EAA29EF345A0043B097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F148EA829EF345A0043B097 /* LaunchScreen.storyboard */; };
 		3F148EAD29EF345A0043B097 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F148EAC29EF345A0043B097 /* main.m */; };
+		3FBD5B3F29EF96440034899B /* BlinkReceiptStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 3FBD5B3E29EF96440034899B /* BlinkReceiptStatic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBD5B3F29EF96440034899B /* BlinkReceiptStatic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,9 @@
 			dependencies = (
 			);
 			name = ShopGPT;
+			packageProductDependencies = (
+				3FBD5B3E29EF96440034899B /* BlinkReceiptStatic */,
+			);
 			productName = ShopGPT;
 			productReference = 3F148E9429EF34590043B097 /* Solydaria.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 3F148E8B29EF34590043B097;
+			packageReferences = (
+				3FBD5B3D29EF96440034899B /* XCRemoteSwiftPackageReference "blinkreceipt-ios" */,
+			);
 			productRefGroup = 3F148E9529EF34590043B097 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -375,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FBD5B3D29EF96440034899B /* XCRemoteSwiftPackageReference "blinkreceipt-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/blinkreceipt/blinkreceipt-ios/";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FBD5B3E29EF96440034899B /* BlinkReceiptStatic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FBD5B3D29EF96440034899B /* XCRemoteSwiftPackageReference "blinkreceipt-ios" */;
+			productName = BlinkReceiptStatic;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3F148EA329EF34590043B097 /* ShopGPT.xcdatamodeld */ = {

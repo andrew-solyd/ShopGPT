@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <BlinkReceiptStatic/BlinkReceiptStatic.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [BRScanManager sharedManager].licenseKey = @"sRwAAAQDZGV2JpOyfZ0rO7stXzeA57jQ2vrL/2luZ8k8x/b9MFo9yHH2cNLjTWPyaCPgJqYKOr8R2VFHsG7WpTvJYRtFtaQ9b2NMIEeIllfrwMn08qiw9z7UBbkny+8cDcG8hvpf2tldLwwdpmdV6LVl0sQQq12K4eglJzvcE6nvQPzrNhMn1nyuH5KSaoo=";
+    
     return YES;
 }
 
