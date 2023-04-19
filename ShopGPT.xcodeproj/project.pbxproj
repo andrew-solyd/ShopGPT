@@ -343,6 +343,7 @@
 				INFOPLIST_FILE = ShopGPT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Solydaria;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hey we don't use this camera...";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -375,6 +376,7 @@
 				INFOPLIST_FILE = ShopGPT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Solydaria;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hey we don't use this camera...";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
