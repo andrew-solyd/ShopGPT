@@ -9,6 +9,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *meButton;
+- (IBAction)showSomething:(id)sender;
+
+@property (copy, nonatomic) NSString *customMessage;
+@property (weak, nonatomic) IBOutlet UILabel *myGreet;
 
 @end
 
