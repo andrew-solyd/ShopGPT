@@ -56,6 +56,7 @@
 		3F148EA929EF345A0043B097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F148EAB29EF345A0043B097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F148EAC29EF345A0043B097 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F75A4B629F8157500FC9F22 /* ShopGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShopGPT.entitlements; sourceTree = "<group>"; };
 		3F7654BB29EF9DA30099DEC8 /* MailCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MailCore.xcframework; sourceTree = "<group>"; };
 		3F7654BC29EF9DA40099DEC8 /* BlinkEReceiptStatic.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = BlinkEReceiptStatic.xcframework; sourceTree = "<group>"; };
 		3F7654BD29EF9DA40099DEC8 /* AccountLinking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AccountLinking.xcframework; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		3F148E8B29EF34590043B097 = {
 			isa = PBXGroup;
 			children = (
+				3F75A4B629F8157500FC9F22 /* ShopGPT.entitlements */,
 				3F7654BD29EF9DA40099DEC8 /* AccountLinking.xcframework */,
 				3F7654BC29EF9DA40099DEC8 /* BlinkEReceiptStatic.xcframework */,
 				3F7654BB29EF9DA30099DEC8 /* MailCore.xcframework */,
@@ -337,8 +339,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ShopGPT.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WQ2P89MQU3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShopGPT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Solydaria;
@@ -356,6 +361,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Solydaria.ShopGPTApp;
 				PRODUCT_NAME = Solydaria;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -370,8 +376,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ShopGPT.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WQ2P89MQU3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShopGPT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Solydaria;
@@ -389,6 +398,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Solydaria.ShopGPTApp;
 				PRODUCT_NAME = Solydaria;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

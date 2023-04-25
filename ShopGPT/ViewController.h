@@ -9,11 +9,19 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *meButton;
-- (IBAction)showSomething:(id)sender;
 
-@property (copy, nonatomic) NSString *customMessage;
-@property (weak, nonatomic) IBOutlet UILabel *myGreet;
+@property (weak, nonatomic) IBOutlet UIButton *linktoRetailerButton;
+- (IBAction)linkToRetailer:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *getOrdersButton;
+- (IBAction)getOrders:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *showRetailersButton;
+- (IBAction)showRetailers:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *status;
+@property (weak, nonatomic) IBOutlet UILabel *orders;
+
 
 @end
 

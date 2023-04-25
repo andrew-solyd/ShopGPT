@@ -21,9 +21,9 @@
     
     [BRAccountLinkingManager shared];
     
-    [BRScanManager sharedManager].licenseKey = @"sRwAAAQDZGV2JpOyfZ0rO7stXzeA57jQ2vrL/2luZ8k8x/b9MFo9yHH2cNLjTWPyaCPgJqYKOr8R2VFHsG7WpTvJYRtFtaQ9b2NMIEeIllfrwMn08qiw9z7UBbkny+8cDcG8hvpf2tldLwwdpmdV6LVl0sQQq12K4eglJzvcE6nvQPzrNhMn1nyuH5KSaoo=";
+    [BRScanManager sharedManager].licenseKey = @"sRwAAAEUU29seWRhcmlhLlNob3BHUFRBcHAP4yGd4kY35EhG6BE7wcfpoGOSHLYNP1zrP497z3JfIBvR019T3rF3S1ZjGGWx4JOVNCAJ/q66gQSzVsUG6C7dsbMIYpdciN3XPJ/72y5gcbLIgR0UsbfJ1VX72pZ8OZz5Kc4Zew9UATwKPvcgKXzdsWyxjS+hbpjRRj0TmgIQ1r3DxHCBUw==";
     
-    [BRScanManager sharedManager].prodIntelKey = @"KeyHere";
+    [BRScanManager sharedManager].prodIntelKey = @"b6MW+LmixBlEYI+FaLaBJHl+9KZUGWNpKPtiMA97UVs=";
 
     return YES;
 }
