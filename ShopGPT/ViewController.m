@@ -8,7 +8,6 @@
 #import "ViewController.h"
 #import <BlinkEReceiptStatic/BRAccountLinkingManager.h>
 #import <BlinkReceiptStatic/BlinkReceiptStatic.h>
-#import <BlinkEReceiptStatic/BRAccountLinkingManager.h>
 
 @interface ViewController ()
 
@@ -46,23 +45,36 @@
     
 }
 
+
 - (IBAction)getOrders:(id)sender {
     
     self.status.text = @"Getting orders..";
     self.orders.text = @"Orders will show here...";
     
-    [[BRAccountLinkingManager shared] grabNewOrdersWithCompletion:^(BRAccountLinkingRetailer retailer, BRScanResults * _Nullable results, NSInteger ordersRemainingInAccount, UIViewController * _Nullable verificationViewController, BRAccountLinkingError error, NSString * _Nonnull sessionId) {
+    [[BRAccountLinkingManager shared] resetHistoryForRetailer:(BRAccountLinkingRetailerWegmans)];
+    
+    [[BRAccountLinkingManager shared] grabNewOrdersForRetailer:BRAccountLinkingRetailerWegmans withCompletion:^(BRAccountLinkingRetailer retailer, BRScanResults * _Nullable results, NSInteger ordersRemainingInAccount, UIViewController * _Nullable verificationViewController, BRAccountLinkingError error, NSString * _Nonnull sessionId) {
         if (error == BRAccountLinkingErrorNone) {
-                
-            // Show count of orders currently saved
-            NSArray<BRProduct *> *products = results.products;
-            NSArray<BRProduct *> *filteredProducts = [products filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"retailer == %@", [BRAccountLinkingCredentials nameForRetailer:BRAccountLinkingRetailerWegmans]]];
-            NSUInteger count = filteredProducts.count;
-            self.orders.text = [NSString stringWithFormat:@"%lu orders found", (unsigned long)count];
-        
             
-        } else {
-            self.orders.text = @"Failed to get orders...";
+            self.orders.text = @" ";
+            
+            BRStringValue *receiptDateValue = results.receiptDate;
+            NSString *receiptDateString = receiptDateValue.value;
+            
+            for (BRProduct *product in results.products) {
+                NSString *productName = product.productName;
+                NSString *productPrice = [NSString stringWithFormat:@"%.2f", product.unitPrice.value];
+                NSString *productInfo = [NSString stringWithFormat:@"%@ $%@", productName, productPrice];
+                // NSLog(productInfo);
+                // [productsList addObject:productInfo];
+                self.orders.text = [self.orders.text stringByAppendingString:productInfo];
+                self.orders.text = [self.orders.text stringByAppendingFormat:@"\n"];
+            }
+            // NSString *productsString = [productsList componentsJoinedByString:@"\n"];
+            // self.orders.text = productsString;
+            // NSLog(productsString);
+            
+            self.status.text = [NSString stringWithFormat:@"Receipt date: %@", receiptDateString];
         }
     }];
     
@@ -72,16 +84,20 @@
     
     
     NSArray<NSNumber *> *linkedRetailers = [self.accountLinkingManager getLinkedRetailers];
-    NSMutableArray<NSDictionary *> *retailersArray = [[NSMutableArray alloc] init];
-        
-        for (NSNumber *retailer in linkedRetailers) {
-            [retailersArray addObject:@{@"retailer": retailer}];
+    
+    // Convert linkedRetailers to string
+    NSMutableString *retailersString = [[NSMutableString alloc] init];
+    
+    for (NSNumber *retailer in linkedRetailers) {
+        if (retailersString.length > 0) {
+            [retailersString appendString:@", "];
         }
-
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:retailersArray options:NSJSONWritingPrettyPrinted error:nil];
-        NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-
-        self.orders.text = jsonString;
+        [retailersString appendString:[NSString stringWithFormat:@"%@", retailer]];
+    }
+    
+    // Output to self.orders.text
+    self.orders.text = retailersString;
+        
     
 }
 
