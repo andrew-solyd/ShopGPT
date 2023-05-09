@@ -1214,47 +1214,6 @@
           },
           {
             "kind": "Var",
-            "name": "fredMeyer",
-            "printedName": "fredMeyer",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AccountLinking.Retailer.Type) -> AccountLinking.Retailer",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Retailer",
-                    "printedName": "AccountLinking.Retailer",
-                    "usr": "c:@M@AccountLinking@E@Retailer"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AccountLinking.Retailer.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Retailer",
-                        "printedName": "AccountLinking.Retailer",
-                        "usr": "c:@M@AccountLinking@E@Retailer"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@AccountLinking@E@Retailer@RetailerFredMeyer",
-            "mangledName": "$s14AccountLinking8RetailerO9fredMeyeryA2CmF",
-            "moduleName": "AccountLinking",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 24
-          },
-          {
-            "kind": "Var",
             "name": "wegmans",
             "printedName": "wegmans",
             "children": [
@@ -1288,6 +1247,47 @@
             "declKind": "EnumElement",
             "usr": "c:@M@AccountLinking@E@Retailer@RetailerWegmans",
             "mangledName": "$s14AccountLinking8RetailerO7wegmansyA2CmF",
+            "moduleName": "AccountLinking",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 24
+          },
+          {
+            "kind": "Var",
+            "name": "fredMeyer",
+            "printedName": "fredMeyer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountLinking.Retailer.Type) -> AccountLinking.Retailer",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Retailer",
+                    "printedName": "AccountLinking.Retailer",
+                    "usr": "c:@M@AccountLinking@E@Retailer"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountLinking.Retailer.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Retailer",
+                        "printedName": "AccountLinking.Retailer",
+                        "usr": "c:@M@AccountLinking@E@Retailer"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AccountLinking@E@Retailer@RetailerFredMeyer",
+            "mangledName": "$s14AccountLinking8RetailerO9fredMeyeryA2CmF",
             "moduleName": "AccountLinking",
             "declAttributes": [
               "ObjC"
@@ -3157,6 +3157,98 @@
           },
           {
             "kind": "Var",
+            "name": "countryCode",
+            "printedName": "countryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AccountLinking@objc(cs)Account(py)countryCode",
+            "mangledName": "$s14AccountLinking0A0C11countryCodeSSvp",
+            "moduleName": "AccountLinking",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AccountLinking@objc(cs)Account(im)countryCode",
+                "mangledName": "$s14AccountLinking0A0C11countryCodeSSvg",
+                "moduleName": "AccountLinking",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AccountLinking@objc(cs)Account(im)setCountryCode:",
+                "mangledName": "$s14AccountLinking0A0C11countryCodeSSvs",
+                "moduleName": "AccountLinking",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14AccountLinking0A0C11countryCodeSSvM",
+                "mangledName": "$s14AccountLinking0A0C11countryCodeSSvM",
+                "moduleName": "AccountLinking",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "returnLatestOrdersOnly",
             "printedName": "returnLatestOrdersOnly",
             "children": [
@@ -3251,7 +3343,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(retailer:username:password:)",
+            "printedName": "init(retailer:username:password:countryCode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3276,13 +3368,19 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AccountLinking@objc(cs)Account(im)initWithRetailer:username:password:",
-            "mangledName": "$s14AccountLinking0A0C8retailer8username8passwordAcA8RetailerO_S2Stcfc",
+            "usr": "c:@M@AccountLinking@objc(cs)Account(im)initWithRetailer:username:password:countryCode:",
+            "mangledName": "$s14AccountLinking0A0C8retailer8username8password11countryCodeAcA8RetailerO_S3Stcfc",
             "moduleName": "AccountLinking",
-            "objc_name": "initWithRetailer:username:password:",
+            "objc_name": "initWithRetailer:username:password:countryCode:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -4260,6 +4358,50 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AccountLinking@objc(cs)AccountLinkingManager(py)version",
+            "mangledName": "$s14AccountLinking0aB7ManagerC7versionSSvp",
+            "moduleName": "AccountLinking",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AccountLinking@objc(cs)AccountLinkingManager(im)version",
+                "mangledName": "$s14AccountLinking0aB7ManagerC7versionSSvg",
+                "moduleName": "AccountLinking",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "resetOrdersHistoryForRetailer",
             "printedName": "resetOrdersHistoryForRetailer(_:)",
@@ -4362,13 +4504,62 @@
           },
           {
             "kind": "Function",
-            "name": "verifyAccount",
-            "printedName": "verifyAccount(_:completion:)",
+            "name": "cancelSessionWithIdentifier",
+            "printedName": "cancelSessionWithIdentifier(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AccountLinking@objc(cs)AccountLinkingManager(im)cancelSessionWithIdentifier:",
+            "mangledName": "$s14AccountLinking0aB7ManagerC27cancelSessionWithIdentifieryySSF",
+            "moduleName": "AccountLinking",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sync",
+            "printedName": "sync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AccountLinking@objc(cs)AccountLinkingManager(im)sync",
+            "mangledName": "$s14AccountLinking0aB7ManagerC4syncyyF",
+            "moduleName": "AccountLinking",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verifyAccount",
+            "printedName": "verifyAccount(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -4432,7 +4623,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@AccountLinking@objc(cs)AccountLinkingManager(im)verifyAccount:completion:",
-            "mangledName": "$s14AccountLinking0aB7ManagerC06verifyA0_10completionyAA0A0C_ySS_So16UIViewControllerCSgSo7NSErrorCSgtctF",
+            "mangledName": "$s14AccountLinking0aB7ManagerC06verifyA0_10completionSSAA0A0C_ySS_So16UIViewControllerCSgSo7NSErrorCSgtctF",
             "moduleName": "AccountLinking",
             "declAttributes": [
               "AccessControl",
@@ -4448,8 +4639,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -4552,7 +4744,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@AccountLinking@objc(cs)AccountLinkingManager(im)grabNewOrders:dayCutoff:completion:",
-            "mangledName": "$s14AccountLinking0aB7ManagerC13grabNewOrders_9dayCutoff10completionyAA0A0C_SdySaySDys11AnyHashableVypGG_SiSSSo16UIViewControllerCSgSo7NSErrorCSgtctF",
+            "mangledName": "$s14AccountLinking0aB7ManagerC13grabNewOrders_9dayCutoff10completionSSAA0A0C_SdySaySDys11AnyHashableVypGG_SiSSSo16UIViewControllerCSgSo7NSErrorCSgtctF",
             "moduleName": "AccountLinking",
             "declAttributes": [
               "AccessControl",
@@ -4860,6 +5052,23 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "AccountLinking"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AccountLinking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "AccountLinking"
       }
     ],
     "json_format_version": 8
@@ -5066,14 +5275,14 @@
       "kind": "IntegerLiteral",
       "offset": 1203,
       "length": 2,
-      "value": "53"
+      "value": "52"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1236,
       "length": 2,
-      "value": "52"
+      "value": "53"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
@@ -5486,14 +5695,14 @@
       "kind": "IntegerLiteral",
       "offset": 1203,
       "length": 2,
-      "value": "53"
+      "value": "52"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1236,
       "length": 2,
-      "value": "52"
+      "value": "53"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
@@ -5778,6 +5987,20 @@
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "IntegerLiteral",
+      "offset": 3038,
+      "length": 4,
+      "value": "1009"
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3101,
+      "length": 4,
+      "value": "1010"
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
+      "kind": "IntegerLiteral",
       "offset": 2547,
       "length": 4,
       "value": "1003"
@@ -5820,6 +6043,20 @@
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "IntegerLiteral",
+      "offset": 3038,
+      "length": 4,
+      "value": "1009"
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3101,
+      "length": 4,
+      "value": "1010"
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
+      "kind": "IntegerLiteral",
       "offset": 2547,
       "length": 4,
       "value": "1003"
@@ -5861,281 +6098,295 @@
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3038,
+      "length": 4,
+      "value": "1009"
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3101,
+      "length": 4,
+      "value": "1010"
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3079,
+      "offset": 3297,
       "length": 15,
       "value": "\"VerifyAccount\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3127,
+      "offset": 3345,
       "length": 11,
       "value": "\"GetOrders\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3171,
+      "offset": 3389,
       "length": 17,
       "value": "\"GetOrderDetails\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3079,
+      "offset": 3297,
       "length": 15,
       "value": "\"VerifyAccount\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3127,
+      "offset": 3345,
       "length": 11,
       "value": "\"GetOrders\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3171,
+      "offset": 3389,
       "length": 17,
       "value": "\"GetOrderDetails\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 3264,
+      "offset": 3482,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 3298,
+      "offset": 3516,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 3264,
+      "offset": 3482,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 3298,
+      "offset": 3516,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 3264,
+      "offset": 3482,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 3298,
+      "offset": 3516,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3558,
+      "offset": 3776,
       "length": 27,
       "value": "\"brAuthenticateUserRequest\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3953,
+      "offset": 4171,
       "length": 26,
       "value": "\"brAuthenticateUserResult\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4329,
+      "offset": 4547,
       "length": 13,
       "value": "\"brGetOrders\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4509,
+      "offset": 4727,
       "length": 19,
       "value": "\"brGetOrderDetails\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4705,
+      "offset": 4923,
       "length": 7,
       "value": "\"brLog\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 5031,
+      "offset": 5249,
       "length": 21,
       "value": "\"brUserInputRequired\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 5272,
+      "offset": 5490,
       "length": 13,
       "value": "\"brAnalytics\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 5485,
+      "offset": 5703,
       "length": 11,
       "value": "\"brLoadUrl\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 5681,
+      "offset": 5899,
       "length": 20,
       "value": "\"brParsingException\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 5983,
+      "offset": 6201,
       "length": 15,
       "value": "\"brLoadUrlInfo\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 6304,
+      "offset": 6522,
       "length": 9,
       "value": "\"brEvent\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 6356,
+      "offset": 6574,
       "length": 11,
       "value": "\"brSession\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 6561,
+      "offset": 6779,
       "length": 18,
       "value": "\"brGetNativeCache\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 6826,
+      "offset": 7044,
       "length": 21,
       "value": "\"brUpdateNativeCache\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3558,
+      "offset": 3776,
       "length": 27,
       "value": "\"brAuthenticateUserRequest\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3953,
+      "offset": 4171,
       "length": 26,
       "value": "\"brAuthenticateUserResult\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4329,
+      "offset": 4547,
       "length": 13,
       "value": "\"brGetOrders\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4509,
+      "offset": 4727,
       "length": 19,
       "value": "\"brGetOrderDetails\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4705,
+      "offset": 4923,
       "length": 7,
       "value": "\"brLog\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 5031,
+      "offset": 5249,
       "length": 21,
       "value": "\"brUserInputRequired\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 5272,
+      "offset": 5490,
       "length": 13,
       "value": "\"brAnalytics\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 5485,
+      "offset": 5703,
       "length": 11,
       "value": "\"brLoadUrl\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 5681,
+      "offset": 5899,
       "length": 20,
       "value": "\"brParsingException\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 5983,
+      "offset": 6201,
       "length": 15,
       "value": "\"brLoadUrlInfo\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 6304,
+      "offset": 6522,
       "length": 9,
       "value": "\"brEvent\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 6356,
+      "offset": 6574,
       "length": 11,
       "value": "\"brSession\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 6561,
+      "offset": 6779,
       "length": 18,
       "value": "\"brGetNativeCache\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 6826,
+      "offset": 7044,
       "length": 21,
       "value": "\"brUpdateNativeCache\""
     },
@@ -6178,48 +6429,48 @@
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingJS.swift",
       "kind": "StringLiteral",
       "offset": 433,
-      "length": 8,
-      "value": "\"2.4.12\""
+      "length": 7,
+      "value": "\"2.5.0\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingJS.swift",
       "kind": "StringLiteral",
-      "offset": 467,
-      "length": 8,
-      "value": "\"2.4.12\""
+      "offset": 466,
+      "length": 7,
+      "value": "\"2.5.0\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingJS.swift",
       "kind": "BooleanLiteral",
-      "offset": 562,
+      "offset": 560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingJS.swift",
       "kind": "BooleanLiteral",
-      "offset": 684,
+      "offset": 682,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingJS.swift",
       "kind": "BooleanLiteral",
-      "offset": 3066,
+      "offset": 3064,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingJS.swift",
       "kind": "BooleanLiteral",
-      "offset": 8596,
+      "offset": 8594,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/Account.swift",
       "kind": "BooleanLiteral",
-      "offset": 362,
+      "offset": 403,
       "length": 4,
       "value": "true"
     },
@@ -6232,15 +6483,36 @@
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingManager.swift",
+      "kind": "StringLiteral",
+      "offset": 283,
+      "length": 30,
+      "value": "\"BRAccountLinkingShouldCancel\""
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingManager.swift",
+      "kind": "StringLiteral",
+      "offset": 381,
+      "length": 32,
+      "value": "\"BRAccountLinkingLogDidComplete\""
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 781,
+      "offset": 1109,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1207,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingManager.swift",
       "kind": "Array",
-      "offset": 840,
+      "offset": 1254,
       "length": 108,
       "value": "[\"7i\", \"bX\", \":R\", \"3v\", \"Cc\", \"C6\", \"g2\", \"ok\", \"Hs\", \"Nt\", \"Ev\", \"Cu\", \"TL\", \"q6\", \"cv\", \"sQ\", \"wa\", \"]Q\"]"
     },
@@ -6275,42 +6547,42 @@
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinking.swift",
       "kind": "BooleanLiteral",
-      "offset": 419,
+      "offset": 372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinking.swift",
       "kind": "IntegerLiteral",
-      "offset": 464,
+      "offset": 417,
       "length": 6,
       "value": "459672"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinking.swift",
       "kind": "StringLiteral",
-      "offset": 6026,
+      "offset": 6031,
       "length": 14,
       "value": "\"com.blink.mc\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinking.swift",
       "kind": "Array",
-      "offset": 6086,
+      "offset": 6091,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinking.swift",
       "kind": "BooleanLiteral",
-      "offset": 6193,
+      "offset": 6198,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinking.swift",
       "kind": "BooleanLiteral",
-      "offset": 6236,
+      "offset": 6241,
       "length": 5,
       "value": "false"
     },
@@ -6331,42 +6603,42 @@
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 443,
+      "offset": 471,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 446,
+      "offset": 474,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 449,
+      "offset": 477,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 452,
+      "offset": 480,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 526,
+      "offset": 554,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 562,
+      "offset": 590,
       "length": 4,
       "value": "true"
     },
@@ -6376,6 +6648,34 @@
       "offset": 199,
       "length": 27,
       "value": "\"AccountLinking.AccountLinkingConfiguration\""
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 25,
+      "value": "\"com.blink.mc.\""
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 479,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 525,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stanislav\/Microblink\/account_linking\/AccountLinking\/AccountLinkingEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 198,
+      "length": 20,
+      "value": "\"AccountLinking.AccountLinkingEvents\""
     }
   ]
 }

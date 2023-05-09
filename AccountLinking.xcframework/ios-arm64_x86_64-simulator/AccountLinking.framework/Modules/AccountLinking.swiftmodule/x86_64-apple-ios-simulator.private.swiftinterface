@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AccountLinking
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import AccountLinking
@@ -43,8 +43,8 @@ import _StringProcessing
   case ralphs = 40
   case heb = 44
   case bjsWholesale = 45
-  case fredMeyer = 53
   case wegmans = 52
+  case fredMeyer = 53
   case sprouts = 54
   case hyVee = 56
   case vons = 63
@@ -89,8 +89,9 @@ import _StringProcessing
   @objc public var retailer: AccountLinking.Retailer
   @objc public var username: Swift.String
   @objc public var password: Swift.String
+  @objc public var countryCode: Swift.String
   @objc public var returnLatestOrdersOnly: Swift.Bool
-  @objc public init(retailer: AccountLinking.Retailer, username: Swift.String, password: Swift.String)
+  @objc public init(retailer: AccountLinking.Retailer, username: Swift.String, password: Swift.String, countryCode: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AccountLinkingManager : ObjectiveC.NSObject {
@@ -101,12 +102,17 @@ import _StringProcessing
   @objc public var logMessage: ((_ message: Swift.String) -> Swift.Void)?
   @objc public var displayDebugView: ((_ view: Any?) -> Swift.Void)?
   @objc public var viewMode: AccountLinking.AccountLinkingViewMode
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc deinit
   @objc public func resetOrdersHistoryForRetailer(_ retailer: AccountLinking.Retailer)
   @objc public func removeUserDataForRetailer(_ retailer: AccountLinking.Retailer, completion: @escaping () -> Swift.Void)
   @objc public func updateConfiguration(_ data: Foundation.Data)
-  @objc public func verifyAccount(_ account: AccountLinking.Account, completion: @escaping (_ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void)
-  @objc public func grabNewOrders(_ account: AccountLinking.Account, dayCutoff: Swift.Double, completion: @escaping (_ orders: [[Swift.AnyHashable : Any]], _ remaining: Swift.Int, _ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void)
-  @objc deinit
+  @objc public func cancelSessionWithIdentifier(_ identifier: Swift.String)
+  @objc public func sync()
+  @objc public func verifyAccount(_ account: AccountLinking.Account, completion: @escaping (_ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void) -> Swift.String
+  @objc public func grabNewOrders(_ account: AccountLinking.Account, dayCutoff: Swift.Double, completion: @escaping (_ orders: [[Swift.AnyHashable : Any]], _ remaining: Swift.Int, _ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void) -> Swift.String
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class AuthorizationViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
